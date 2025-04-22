@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio L.E.V.A.R.T.</title>
+    <!-- Lien vers Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <style>
+        /* Variables de couleur personnalisées */
+        :root {
+            --primary-color: #414247;
+            --secondary-color: #1b222a;
+            --accent-color: #d9db3b;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        
+        .portfolio-item {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-custom:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">NomDuPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero-section text-center" id="accueil">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Création Visuelle & Design</h1>
+            <p class="lead mb-5">Graphiste & Illustrateur | Directeur Artistique en devenir</p>
+            <a href="#portfolio" class="btn btn-custom btn-lg">Voir mes travaux</a>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h2>
+            <div class="row">
+                <!-- Projet 1 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item card">
+                        <img src="images/portfolio/alexp.jpg" class="card-img-top" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet Design 1</h5>
+                            <p class="card-text">Description courte du projet et techniques utilisées.</p>
+                            <a href="#" class="btn btn-sm btn-custom">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item card">
+                        <img src="images/portfolio/dess1.jpg" class="card-img-top" alt="Projet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Illustration 1</h5>
+                            <p class="card-text">Description courte du projet et techniques utilisées.</p>
+                            <a href="#" class="btn btn-sm btn-custom">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item card">
+                        <img src="images/portfolio/dess2.jpg" class="card-img-top" alt="Projet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet Multimédia</h5>
+                            <p class="card-text">Description courte du projet et techniques utilisées.</p>
+                            <a href="#" class="btn btn-sm btn-custom">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deuxième rangée de projets -->
+            <div class="row mt-4">
+                <!-- Projet 4 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item card">
+                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Projet 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Design d'Interface</h5>
+                            <p class="card-text">Description courte du projet et techniques utilisées.</p>
+                            <a href="#" class="btn btn-sm btn-custom">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 5 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item card">
+                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Projet 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Animation 3D</h5>
+                            <p class="card-text">Description courte du projet et techniques utilisées.</p>
+                            <a href="#" class="btn btn-sm btn-custom">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 6 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item card">
+                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Projet 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Identité Visuelle</h5>
+                            <p class="card-text">Description courte du projet et techniques utilisées.</p>
+                            <a href="#" class="btn btn-sm btn-custom">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://via.placeholder.com/600x600" alt="Photo de profil" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">À Propos de Moi</h2>
+                    <p class="lead">Graphiste et illustrateur passionné, actuellement en formation pour devenir directeur artistique multimédia.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim nibh eu felis tristique mattis. Sed in urna ut leo ultricies vulputate. Donec nec lorem vel felis consequat auctor nec vel dolor.</p>
+                    <p>Maecenas eget sapien gravida, pharetra enim id, placerat nulla. Nulla facilisi. Proin consectetur commodo accumsan. Suspendisse potenti.</p>
+                    <div class="mt-4">
+                        <h5>Compétences:</h5>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Adobe Photoshop</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Adobe Illustrator</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Design UI/UX</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>3D Modélisation</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Me Contacter</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom">Envoyer Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-4 h-100 rounded">
+                        <h4 class="mb-4">Informations de Contact</h4>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i> Paris, France</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i> email@exemple.com</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i> +33 6 12 34 56 78</p>
+                        
+                        <h5 class="mt-5 mb-3">Suivez-moi</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-dark fs-4"><i class="bi bi-behance"></i></a>
+                            <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-dark fs-4"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-dark fs-4"><i class="bi bi-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 NomDuPortfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>
